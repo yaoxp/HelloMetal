@@ -16,6 +16,8 @@
 		5BD8043C28A3921F00E1A3A4 /* HelloMetalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8043B28A3921F00E1A3A4 /* HelloMetalTests.swift */; };
 		5BD8044628A3921F00E1A3A4 /* HelloMetalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8044528A3921F00E1A3A4 /* HelloMetalUITests.swift */; };
 		5BD8044828A3921F00E1A3A4 /* HelloMetalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8044728A3921F00E1A3A4 /* HelloMetalUITestsLaunchTests.swift */; };
+		5BD8045828A39B9100E1A3A4 /* ComputeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8045628A39B9100E1A3A4 /* ComputeViewController.swift */; };
+		5BD8045928A39B9100E1A3A4 /* ComputeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD8045728A39B9100E1A3A4 /* ComputeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		5BD8044128A3921F00E1A3A4 /* HelloMetalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloMetalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD8044528A3921F00E1A3A4 /* HelloMetalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloMetalUITests.swift; sourceTree = "<group>"; };
 		5BD8044728A3921F00E1A3A4 /* HelloMetalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloMetalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5BD8045628A39B9100E1A3A4 /* ComputeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeViewController.swift; sourceTree = "<group>"; };
+		5BD8045728A39B9100E1A3A4 /* ComputeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComputeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		5BD8042328A3921D00E1A3A4 /* HelloMetal */ = {
 			isa = PBXGroup;
 			children = (
+				5BD8045428A39B6600E1A3A4 /* Demos */,
 				5BD8042428A3921D00E1A3A4 /* AppDelegate.swift */,
 				5BD8042628A3921D00E1A3A4 /* SceneDelegate.swift */,
 				5BD8042828A3921D00E1A3A4 /* ViewController.swift */,
@@ -125,6 +130,23 @@
 				5BD8044728A3921F00E1A3A4 /* HelloMetalUITestsLaunchTests.swift */,
 			);
 			path = HelloMetalUITests;
+			sourceTree = "<group>";
+		};
+		5BD8045428A39B6600E1A3A4 /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				5BD8045528A39B6F00E1A3A4 /* compute */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
+		5BD8045528A39B6F00E1A3A4 /* compute */ = {
+			isa = PBXGroup;
+			children = (
+				5BD8045628A39B9100E1A3A4 /* ComputeViewController.swift */,
+				5BD8045728A39B9100E1A3A4 /* ComputeViewController.xib */,
+			);
+			path = compute;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +255,7 @@
 			files = (
 				5BD8043128A3921F00E1A3A4 /* LaunchScreen.storyboard in Resources */,
 				5BD8042E28A3921F00E1A3A4 /* Assets.xcassets in Resources */,
+				5BD8045928A39B9100E1A3A4 /* ComputeViewController.xib in Resources */,
 				5BD8042C28A3921D00E1A3A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +283,7 @@
 			files = (
 				5BD8042928A3921D00E1A3A4 /* ViewController.swift in Sources */,
 				5BD8042528A3921D00E1A3A4 /* AppDelegate.swift in Sources */,
+				5BD8045828A39B9100E1A3A4 /* ComputeViewController.swift in Sources */,
 				5BD8042728A3921D00E1A3A4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
