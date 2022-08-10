@@ -18,6 +18,9 @@
 		5BD8044828A3921F00E1A3A4 /* HelloMetalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8044728A3921F00E1A3A4 /* HelloMetalUITestsLaunchTests.swift */; };
 		5BD8045828A39B9100E1A3A4 /* ComputeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8045628A39B9100E1A3A4 /* ComputeViewController.swift */; };
 		5BD8045928A39B9100E1A3A4 /* ComputeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD8045728A39B9100E1A3A4 /* ComputeViewController.xib */; };
+		5BD8045B28A3A00000E1A3A4 /* ComputeAdder.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8045A28A3A00000E1A3A4 /* ComputeAdder.metal */; };
+		5BD8045D28A3A0AB00E1A3A4 /* ComputeAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8045C28A3A0AB00E1A3A4 /* ComputeAdder.swift */; };
+		5BD8046028A3A37300E1A3A4 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 5BD8045F28A3A37300E1A3A4 /* Logging */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,8 @@
 		5BD8044728A3921F00E1A3A4 /* HelloMetalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloMetalUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5BD8045628A39B9100E1A3A4 /* ComputeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeViewController.swift; sourceTree = "<group>"; };
 		5BD8045728A39B9100E1A3A4 /* ComputeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComputeViewController.xib; sourceTree = "<group>"; };
+		5BD8045A28A3A00000E1A3A4 /* ComputeAdder.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ComputeAdder.metal; sourceTree = "<group>"; };
+		5BD8045C28A3A0AB00E1A3A4 /* ComputeAdder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeAdder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD8046028A3A37300E1A3A4 /* Logging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +151,8 @@
 			children = (
 				5BD8045628A39B9100E1A3A4 /* ComputeViewController.swift */,
 				5BD8045728A39B9100E1A3A4 /* ComputeViewController.xib */,
+				5BD8045A28A3A00000E1A3A4 /* ComputeAdder.metal */,
+				5BD8045C28A3A0AB00E1A3A4 /* ComputeAdder.swift */,
 			);
 			path = compute;
 			sourceTree = "<group>";
@@ -165,6 +173,9 @@
 			dependencies = (
 			);
 			name = HelloMetal;
+			packageProductDependencies = (
+				5BD8045F28A3A37300E1A3A4 /* Logging */,
+			);
 			productName = HelloMetal;
 			productReference = 5BD8042128A3921D00E1A3A4 /* HelloMetal.app */;
 			productType = "com.apple.product-type.application";
@@ -237,6 +248,9 @@
 				Base,
 			);
 			mainGroup = 5BD8041828A3921D00E1A3A4;
+			packageReferences = (
+				5BD8045E28A3A37300E1A3A4 /* XCRemoteSwiftPackageReference "swift-log" */,
+			);
 			productRefGroup = 5BD8042228A3921D00E1A3A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -281,9 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD8045B28A3A00000E1A3A4 /* ComputeAdder.metal in Sources */,
 				5BD8042928A3921D00E1A3A4 /* ViewController.swift in Sources */,
 				5BD8042528A3921D00E1A3A4 /* AppDelegate.swift in Sources */,
 				5BD8045828A39B9100E1A3A4 /* ComputeViewController.swift in Sources */,
+				5BD8045D28A3A0AB00E1A3A4 /* ComputeAdder.swift in Sources */,
 				5BD8042728A3921D00E1A3A4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,6 +642,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5BD8045E28A3A37300E1A3A4 /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5BD8045F28A3A37300E1A3A4 /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5BD8045E28A3A37300E1A3A4 /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5BD8041928A3921D00E1A3A4 /* Project object */;
 }

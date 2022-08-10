@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import Logging
+
+var logger = Logger(label: "com.main")
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        logger.logLevel = .trace
         return true
     }
 
